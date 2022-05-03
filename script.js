@@ -1,11 +1,11 @@
 // création de la fonction fizzbuzz (number)
 function fizzbuzz(nombre) {
-    if (nombre %3===0) {
-        return "fizz";
+    if (nombre %3 === 0 && nombre %5 === 0) {
+        return "fizzbuzz";
     } else if(nombre %5 === 0){
         return "buzz";
-    } else if(nombre %3 === 0 && nombre %5 === 0){  
-        return "fizzbuzz";
+    } else if(nombre %3===0){  
+        return "fizz";
     } else{  
         return nombre;
     }
